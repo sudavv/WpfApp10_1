@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp10_1"
         mc:Ignorable="d"
-        Title="Отражение" Height="450" Width="800">
+        Title="Отражение" Height="450" Width="800" Background="LavenderBlush">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.ColumnSpan="1" Grid.Column="0">
             
-            <Border BorderBrush="DarkGray" BorderThickness="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <Border BorderBrush="DarkGray" BorderThickness="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
                 <Image Source="Data/Image.png" Height="179" Width="262" x:Name="myImage"/>
                 <Border.Effect>
                     <DropShadowEffect Color="Black" Direction="40" ShadowDepth="20" Opacity="0.4"/>
@@ -23,7 +23,7 @@
                 </Border.RenderTransform>
             </Border>
 
-            <Border Height="189" Width="262" HorizontalAlignment="Left" Margin="10,0,0,0">
+            <Border Height="189" Width="262" HorizontalAlignment="Center" Margin="10,0,0,0">
                 <Border.Background>
                     <VisualBrush Visual="{Binding ElementName=myImage}">
                         <VisualBrush.Transform>
@@ -47,17 +47,17 @@
         </StackPanel>
 
         <StackPanel Grid.ColumnSpan="1" Grid.Column="1">
-        <Border BorderBrush="DarkGray" BorderThickness="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,60,0,0">
+            <Border BorderBrush="DarkGray" BorderThickness="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,60,0,0">
             <Image Source="Data/Image.png" Height="179" Width="262" x:Name="myImage1"/>
             <Border.Effect>
-                <DropShadowEffect Color="Black" Direction="160"  ShadowDepth="30" Opacity="0.4"/>
+                <DropShadowEffect Color="Black" Direction="140"  ShadowDepth="20" Opacity="0.4"/>
             </Border.Effect>
             <Border.RenderTransform>
                 <SkewTransform CenterX="0" CenterY="0" AngleX="0" AngleY="-10"/>
             </Border.RenderTransform>
         </Border>
 
-        <Border Height="189" Width="262" HorizontalAlignment="Left" Margin="20,10,0,0">
+            <Border Height="189" Width="262" HorizontalAlignment="Center" Margin="20,10,0,0">
             <Border.Background>
                 <VisualBrush Visual="{Binding ElementName=myImage1}">
                     <VisualBrush.Transform>
