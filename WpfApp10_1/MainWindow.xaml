@@ -57,7 +57,7 @@
             </Border.RenderTransform>
         </Border>
 
-            <Border Height="189" Width="262" HorizontalAlignment="Center" Margin="20,10,0,0">
+            <Border Height="189" Width="262" HorizontalAlignment="Center" Margin="10,10,0,0">
             <Border.Background>
                 <VisualBrush Visual="{Binding ElementName=myImage1}">
                     <VisualBrush.Transform>
